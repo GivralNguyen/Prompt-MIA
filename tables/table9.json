@@ -1,0 +1,26 @@
+{
+  "id": "table9",
+  "sources": [
+    "sparsity"
+  ],
+  "rows": [
+    {
+      "model": "vit_b32",
+      "total_params": 88772594,
+      "modified_params": 3072,
+      "sparsity_percent": 0.0034605274686464607
+    },
+    {
+      "model": "deit_b16",
+      "total_params": 86228234,
+      "modified_params": 3072,
+      "sparsity_percent": 0.0035626381957445633
+    },
+    {
+      "model": "convit_base",
+      "total_params": 86200618,
+      "modified_params": 3072,
+      "sparsity_percent": 0.003563779554341478
+    }
+  ]
+}

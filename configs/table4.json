@@ -1,0 +1,228 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_vit_b32",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_vit_b32",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_vit_b32",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "drift/cifar10",
+      "kind": "drift",
+      "run": "base/cifar10_vit_b32",
+      "n_targets": 300,
+      "thresholds": [
+        1,
+        2,
+        3
+      ],
+      "injection_rates": {
+        "1/10": 0.1,
+        "1/60": 0.016666666666666666
+      },
+      "steady_round": 5,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "drift/cifar100",
+      "kind": "drift",
+      "run": "base/cifar100_vit_b32",
+      "n_targets": 300,
+      "thresholds": [
+        1,
+        2,
+        3
+      ],
+      "injection_rates": {
+        "1/10": 0.1,
+        "1/60": 0.016666666666666666
+      },
+      "steady_round": 5,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "drift/tinyimagenet",
+      "kind": "drift",
+      "run": "base/tinyimagenet_vit_b32",
+      "n_targets": 300,
+      "thresholds": [
+        1,
+        2,
+        3
+      ],
+      "injection_rates": {
+        "1/10": 0.1,
+        "1/60": 0.016666666666666666
+      },
+      "steady_round": 5,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "drift/fourdataset",
+      "kind": "drift",
+      "run": "base/fourdataset_vit_b32",
+      "n_targets": 300,
+      "thresholds": [
+        1,
+        2,
+        3
+      ],
+      "injection_rates": {
+        "1/10": 0.1,
+        "1/60": 0.016666666666666666
+      },
+      "steady_round": 5,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "table4",
+      "title": "Cross-round key-drift audit F1",
+      "sources": [
+        "drift/cifar10",
+        "drift/cifar100",
+        "drift/tinyimagenet",
+        "drift/fourdataset"
+      ],
+      "thresholds": [
+        1,
+        2,
+        3
+      ],
+      "injection_rates": [
+        "1/10",
+        "1/60"
+      ],
+      "aggregate": "datasets"
+    }
+  ]
+}

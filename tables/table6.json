@@ -1,0 +1,304 @@
+{
+  "id": "table6",
+  "sources": [
+    "outlier/cifar10_vit_b32",
+    "outlier/cifar10_convit_base",
+    "outlier/cifar10_deit_b16",
+    "outlier/cifar100_vit_b32",
+    "outlier/cifar100_convit_base",
+    "outlier/cifar100_deit_b16",
+    "outlier/tinyimagenet_vit_b32",
+    "outlier/tinyimagenet_convit_base",
+    "outlier/tinyimagenet_deit_b16"
+  ],
+  "rows": [
+    {
+      "dataset": "cifar10",
+      "model": "vit_b32",
+      "method": "IsolationForest",
+      "precision": 0.027710426047800486,
+      "recall": 1.0,
+      "f1": 0.053926525109538256
+    },
+    {
+      "dataset": "cifar10",
+      "model": "vit_b32",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "model": "vit_b32",
+      "method": "OneClassSVM",
+      "precision": 0.06253908692933083,
+      "recall": 0.5,
+      "f1": 0.11117287381878821
+    },
+    {
+      "dataset": "cifar10",
+      "model": "vit_b32",
+      "method": "EllipticEnvelope",
+      "precision": 0.015539617486338796,
+      "recall": 0.22749999999999998,
+      "f1": 0.029092071611253194
+    },
+    {
+      "dataset": "cifar10",
+      "model": "convit_base",
+      "method": "IsolationForest",
+      "precision": 0.02362669816893089,
+      "recall": 1.0,
+      "f1": 0.04616272360069244
+    },
+    {
+      "dataset": "cifar10",
+      "model": "convit_base",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "model": "convit_base",
+      "method": "OneClassSVM",
+      "precision": 0.058456973293768554,
+      "recall": 0.49250000000000005,
+      "f1": 0.10450928381962866
+    },
+    {
+      "dataset": "cifar10",
+      "model": "convit_base",
+      "method": "EllipticEnvelope",
+      "precision": 0.05113383726100489,
+      "recall": 0.2875,
+      "f1": 0.08682521706304265
+    },
+    {
+      "dataset": "cifar10",
+      "model": "deit_b16",
+      "method": "IsolationForest",
+      "precision": 0.04609888210210902,
+      "recall": 1.0,
+      "f1": 0.08813484631486174
+    },
+    {
+      "dataset": "cifar10",
+      "model": "deit_b16",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "cifar10",
+      "model": "deit_b16",
+      "method": "OneClassSVM",
+      "precision": 0.0689873417721519,
+      "recall": 0.545,
+      "f1": 0.12247191011235956
+    },
+    {
+      "dataset": "cifar10",
+      "model": "deit_b16",
+      "method": "EllipticEnvelope",
+      "precision": 0.0182370820668693,
+      "recall": 0.225,
+      "f1": 0.033739456419868794
+    },
+    {
+      "dataset": "cifar100",
+      "model": "vit_b32",
+      "method": "IsolationForest",
+      "precision": 0.0502828409805154,
+      "recall": 1.0,
+      "f1": 0.0957510472770796
+    },
+    {
+      "dataset": "cifar100",
+      "model": "vit_b32",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "model": "vit_b32",
+      "method": "OneClassSVM",
+      "precision": 0.032112393376818864,
+      "recall": 0.4800000000000001,
+      "f1": 0.06019752312274651
+    },
+    {
+      "dataset": "cifar100",
+      "model": "vit_b32",
+      "method": "EllipticEnvelope",
+      "precision": 0.03969327920613441,
+      "recall": 0.22000000000000003,
+      "f1": 0.06725257928926251
+    },
+    {
+      "dataset": "cifar100",
+      "model": "convit_base",
+      "method": "IsolationForest",
+      "precision": 0.05067781578613962,
+      "recall": 1.0,
+      "f1": 0.09646689979500785
+    },
+    {
+      "dataset": "cifar100",
+      "model": "convit_base",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "model": "convit_base",
+      "method": "OneClassSVM",
+      "precision": 0.033373063170441,
+      "recall": 0.49000000000000005,
+      "f1": 0.06249003666507253
+    },
+    {
+      "dataset": "cifar100",
+      "model": "convit_base",
+      "method": "EllipticEnvelope",
+      "precision": 0.03521573604060914,
+      "recall": 0.2775,
+      "f1": 0.06250000000000001
+    },
+    {
+      "dataset": "cifar100",
+      "model": "deit_b16",
+      "method": "IsolationForest",
+      "precision": 0.03771805752003772,
+      "recall": 1.0,
+      "f1": 0.07269422989550205
+    },
+    {
+      "dataset": "cifar100",
+      "model": "deit_b16",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "cifar100",
+      "model": "deit_b16",
+      "method": "OneClassSVM",
+      "precision": 0.04398319743019521,
+      "recall": 0.445,
+      "f1": 0.0800539689678435
+    },
+    {
+      "dataset": "cifar100",
+      "model": "deit_b16",
+      "method": "EllipticEnvelope",
+      "precision": 0.019476567255021303,
+      "recall": 0.24000000000000005,
+      "f1": 0.03602927378495028
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "vit_b32",
+      "method": "IsolationForest",
+      "precision": 0.02149035620265406,
+      "recall": 1.0,
+      "f1": 0.04207647399147951
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "vit_b32",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "vit_b32",
+      "method": "OneClassSVM",
+      "precision": 0.03785488958990537,
+      "recall": 0.4800000000000001,
+      "f1": 0.07017543859649124
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "vit_b32",
+      "method": "EllipticEnvelope",
+      "precision": 0.018559612668952997,
+      "recall": 0.23000000000000004,
+      "f1": 0.03434758260220273
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "convit_base",
+      "method": "IsolationForest",
+      "precision": 0.05658508982883011,
+      "recall": 1.0,
+      "f1": 0.10710938545990094
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "convit_base",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "convit_base",
+      "method": "OneClassSVM",
+      "precision": 0.04053514376996805,
+      "recall": 0.5075000000000001,
+      "f1": 0.07507396449704143
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "convit_base",
+      "method": "EllipticEnvelope",
+      "precision": 0.03532781667727562,
+      "recall": 0.2775,
+      "f1": 0.06267645398080181
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "deit_b16",
+      "method": "IsolationForest",
+      "precision": 0.04582426394776034,
+      "recall": 1.0,
+      "f1": 0.08763281849052469
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "deit_b16",
+      "method": "LocalOutlierFactor",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "deit_b16",
+      "method": "OneClassSVM",
+      "precision": 0.03140383636054999,
+      "recall": 0.4625,
+      "f1": 0.058814178985852804
+    },
+    {
+      "dataset": "tinyimagenet",
+      "model": "deit_b16",
+      "method": "EllipticEnvelope",
+      "precision": 0.012641284949434861,
+      "recall": 0.2125,
+      "f1": 0.023862998315553063
+    }
+  ]
+}

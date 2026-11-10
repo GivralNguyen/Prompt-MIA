@@ -1,0 +1,747 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_vit_b32",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_vit_b32",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_vit_b32",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 160,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/cifar10_C160",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 160,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/cifar100_C160",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 160,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/tinyimagenet_C160",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 160,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/fourdataset_C160",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 320,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/cifar10_C320",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 320,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/cifar100_C320",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 320,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/tinyimagenet_C320",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 320,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clients/fourdataset_C320",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "main/cifar10_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "main/cifar100_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "main/tinyimagenet_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "main/fourdataset_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "clients/cifar10_C160",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/cifar10_C160"
+    },
+    {
+      "name": "clients/cifar100_C160",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/cifar100_C160"
+    },
+    {
+      "name": "clients/tinyimagenet_C160",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/tinyimagenet_C160"
+    },
+    {
+      "name": "clients/fourdataset_C160",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/fourdataset_C160"
+    },
+    {
+      "name": "clients/cifar10_C320",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/cifar10_C320"
+    },
+    {
+      "name": "clients/cifar100_C320",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/cifar100_C320"
+    },
+    {
+      "name": "clients/tinyimagenet_C320",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/tinyimagenet_C320"
+    },
+    {
+      "name": "clients/fourdataset_C320",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clients/fourdataset_C320"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure21",
+      "title": "Number of clients, averaged over four datasets",
+      "sources": [
+        "main/cifar10_vit_b32",
+        "main/cifar100_vit_b32",
+        "main/tinyimagenet_vit_b32",
+        "main/fourdataset_vit_b32",
+        "clients/cifar10_C160",
+        "clients/cifar100_C160",
+        "clients/tinyimagenet_C160",
+        "clients/fourdataset_C160",
+        "clients/cifar10_C320",
+        "clients/cifar100_C320",
+        "clients/tinyimagenet_C320",
+        "clients/fourdataset_C320"
+      ],
+      "panels": [
+        {
+          "title": "Attack Success Rate w.r.t. number of clients (ViT-B/32, mean over 4 datasets)",
+          "sources": [
+            "main/cifar10_vit_b32",
+            "main/cifar100_vit_b32",
+            "main/tinyimagenet_vit_b32",
+            "main/fourdataset_vit_b32",
+            "clients/cifar10_C160",
+            "clients/cifar100_C160",
+            "clients/tinyimagenet_C160",
+            "clients/fourdataset_C160",
+            "clients/cifar10_C320",
+            "clients/cifar100_C320",
+            "clients/tinyimagenet_C320",
+            "clients/fourdataset_C320"
+          ],
+          "curves": [
+            {
+              "label": "80 clients",
+              "sources": [
+                "main/cifar10_vit_b32",
+                "main/cifar100_vit_b32",
+                "main/tinyimagenet_vit_b32",
+                "main/fourdataset_vit_b32"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "marker": "o",
+              "ls": "-"
+            },
+            {
+              "label": "160 clients",
+              "sources": [
+                "clients/cifar10_C160",
+                "clients/cifar100_C160",
+                "clients/tinyimagenet_C160",
+                "clients/fourdataset_C160"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "marker": "s",
+              "ls": "--"
+            },
+            {
+              "label": "320 clients",
+              "sources": [
+                "clients/cifar10_C320",
+                "clients/cifar100_C320",
+                "clients/tinyimagenet_C320",
+                "clients/fourdataset_C320"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "marker": "d",
+              "ls": "-."
+            }
+          ],
+          "legend": {
+            "fontsize": "medium"
+          }
+        }
+      ],
+      "figsize": [
+        8,
+        5
+      ],
+      "xlabel": "Batch Size",
+      "tight_layout": false
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "figure10",
+  "sources": [
+    "bound/standard_cifar10",
+    "bound/standard_cifar100",
+    "bound/standard_tinyimagenet",
+    "bound/standard_fourdataset",
+    "bound/alpha0.05",
+    "bound/alpha0.1"
+  ],
+  "panels": [
+    {
+      "title": "Theorem 3.3 FPR Upper Bound per Dataset (DeiT-B/16)",
+      "sources": [
+        "bound/standard_cifar10",
+        "bound/standard_cifar100",
+        "bound/standard_tinyimagenet",
+        "bound/standard_fourdataset"
+      ],
+      "labels": [
+        "CIFAR-10",
+        "CIFAR-100",
+        "TinyImageNet",
+        "FourDataset"
+      ],
+      "log10_mean_bound": [
+        -53.183488406072165,
+        -51.57313541532046,
+        -53.03953401882784,
+        -47.052603775626785
+      ]
+    },
+    {
+      "title": "CIFAR-100 Per-sample FPR Upper Bound (Theorem 3.3, DeiT-B/16)",
+      "sources": [
+        "bound/alpha0.05",
+        "bound/alpha0.1",
+        "bound/standard_cifar100"
+      ],
+      "labels": [
+        "0.05",
+        "0.1",
+        "0.5"
+      ],
+      "log10_mean_bound": [
+        -49.19054980996665,
+        -51.21459625101168,
+        -51.57313541532046
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "table8",
+  "sources": [
+    "train:base/cifar10_deit_b16",
+    "train:injection/cifar10_deit_b16",
+    "train:base/fourdataset_vit_b32",
+    "train:injection/fourdataset_vit_b32"
+  ],
+  "rows": [
+    {
+      "dataset": "cifar10",
+      "model": "deit_b16",
+      "clean_accuracy": 0.948,
+      "clean_std": 0.0,
+      "injected_accuracy": 0.9478,
+      "injected_std": 0.0,
+      "clean_runs": 1,
+      "injected_runs": 1
+    },
+    {
+      "dataset": "fourdataset",
+      "model": "vit_b32",
+      "clean_accuracy": 0.6666999800119928,
+      "clean_std": 0.0,
+      "injected_accuracy": 0.6654007595442735,
+      "injected_std": 0.0,
+      "clean_runs": 1,
+      "injected_runs": 1
+    }
+  ]
+}

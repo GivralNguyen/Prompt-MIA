@@ -1,0 +1,26 @@
+{
+  "training": [],
+  "evaluation": [
+    {
+      "name": "sparsity",
+      "kind": "sparsity",
+      "backbones": [
+        "vit_b32",
+        "deit_b16",
+        "convit_base"
+      ],
+      "num_classes": 10,
+      "M": 20,
+      "N": 4
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "table9",
+      "title": "Attack sparsity",
+      "sources": [
+        "sparsity"
+      ]
+    }
+  ]
+}

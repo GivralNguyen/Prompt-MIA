@@ -1,0 +1,5 @@
+number,attack,surface,methodology,assumptions
+1,Blackbox-Loss; Loss-Series,Data loss,Members tend to have lower loss; Loss-Series uses losses over multiple rounds.,Bounded loss and Gaussian error distributions
+2,Grad-Cosine,Gradient vector,Member and non-member gradient cosine similarities have different distributions.,Instance gradients are orthogonal and their cosine similarity is Gaussian
+3,FedMIA,Data loss (FedMIA-I); gradient vector (FedMIA-II),Update distributions differ between clients trained with and without the target.,Gaussian update distributions
+4,PromptMIA,Global prompt pool in federated prompt tuning,Injected prompts are updated when the target is present.,Query vectors follow a Gaussian mixture over benign keys

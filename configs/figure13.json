@@ -1,0 +1,301 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_convit_base",
+      "dataset": "cifar10",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_convit_base",
+      "dataset": "cifar100",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_convit_base",
+      "dataset": "tinyimagenet",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_convit_base",
+      "dataset": "fourdataset",
+      "backbone": "convit_base",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "main/cifar10_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_convit_base"
+    },
+    {
+      "name": "main/cifar100_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_convit_base"
+    },
+    {
+      "name": "main/tinyimagenet_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_convit_base"
+    },
+    {
+      "name": "main/fourdataset_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_convit_base"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure13",
+      "title": "PromptMIA vs Naive on ConViT - Advantage & Attack Success Rate across Datasets",
+      "sources": [
+        "main/cifar10_convit_base",
+        "main/cifar100_convit_base",
+        "main/tinyimagenet_convit_base",
+        "main/fourdataset_convit_base"
+      ],
+      "panels": [
+        {
+          "title": "CIFAR10 (ConViT)",
+          "sources": [
+            "main/cifar10_convit_base"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        },
+        {
+          "title": "CIFAR100 (ConViT)",
+          "sources": [
+            "main/cifar100_convit_base"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        },
+        {
+          "title": "TinyImageNet (ConViT)",
+          "sources": [
+            "main/tinyimagenet_convit_base"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        },
+        {
+          "title": "FourDataset (ConViT)",
+          "sources": [
+            "main/fourdataset_convit_base"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        }
+      ],
+      "ncols": 4
+    }
+  ]
+}

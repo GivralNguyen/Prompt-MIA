@@ -1,0 +1,34 @@
+{
+  "id": "table3",
+  "sources": [],
+  "rows": [
+    {
+      "number": 1,
+      "attack": "Blackbox-Loss; Loss-Series",
+      "surface": "Data loss",
+      "methodology": "Members tend to have lower loss; Loss-Series uses losses over multiple rounds.",
+      "assumptions": "Bounded loss and Gaussian error distributions"
+    },
+    {
+      "number": 2,
+      "attack": "Grad-Cosine",
+      "surface": "Gradient vector",
+      "methodology": "Member and non-member gradient cosine similarities have different distributions.",
+      "assumptions": "Instance gradients are orthogonal and their cosine similarity is Gaussian"
+    },
+    {
+      "number": 3,
+      "attack": "FedMIA",
+      "surface": "Data loss (FedMIA-I); gradient vector (FedMIA-II)",
+      "methodology": "Update distributions differ between clients trained with and without the target.",
+      "assumptions": "Gaussian update distributions"
+    },
+    {
+      "number": 4,
+      "attack": "PromptMIA",
+      "surface": "Global prompt pool in federated prompt tuning",
+      "methodology": "Injected prompts are updated when the target is present.",
+      "assumptions": "Query vectors follow a Gaussian mixture over benign keys"
+    }
+  ]
+}

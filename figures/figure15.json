@@ -1,0 +1,75 @@
+{
+  "id": "figure15",
+  "sources": [
+    "outlier_embedding/promptmia"
+  ],
+  "panels": [
+    {
+      "detector": "IsolationForest",
+      "flagged": [
+        0,
+        1,
+        3,
+        7,
+        13,
+        14,
+        15,
+        16
+      ],
+      "injected": [
+        15,
+        16,
+        13,
+        7
+      ],
+      "true_positives": 4,
+      "false_positives": 4
+    },
+    {
+      "detector": "LocalOutlierFactor",
+      "flagged": [],
+      "injected": [
+        15,
+        16,
+        13,
+        7
+      ],
+      "true_positives": 0,
+      "false_positives": 0
+    },
+    {
+      "detector": "OneClassSVM",
+      "flagged": [
+        1,
+        6,
+        7,
+        17
+      ],
+      "injected": [
+        15,
+        16,
+        13,
+        7
+      ],
+      "true_positives": 1,
+      "false_positives": 3
+    },
+    {
+      "detector": "EllipticEnvelope",
+      "flagged": [
+        8,
+        12,
+        13,
+        14
+      ],
+      "injected": [
+        15,
+        16,
+        13,
+        7
+      ],
+      "true_positives": 1,
+      "false_positives": 3
+    }
+  ]
+}

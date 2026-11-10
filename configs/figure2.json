@@ -1,0 +1,104 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "keys/benign",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "variant": "benign",
+      "include_queries": false,
+      "target": 0,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "keys/naive",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "variant": "naive",
+      "include_queries": false,
+      "target": 0,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "keys/promptmia",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "variant": "promptmia",
+      "include_queries": false,
+      "target": 0,
+      "seed": 0,
+      "delta_min": 0.02,
+      "delta": 0.05
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure2",
+      "title": "Global keys before and after injection",
+      "sources": [
+        "keys/benign",
+        "keys/naive",
+        "keys/promptmia"
+      ],
+      "panels": [
+        {
+          "title": "t-SNE of Global Keys (Unmodified)",
+          "sources": [
+            "keys/benign"
+          ],
+          "mode": "keys"
+        },
+        {
+          "title": "t-SNE of Global Keys (with Naive Injected Keys Highlighted)",
+          "sources": [
+            "keys/naive"
+          ],
+          "mode": "keys"
+        },
+        {
+          "title": "t-SNE of Global Keys (with PromptMIA Injected Keys Highlighted)",
+          "sources": [
+            "keys/promptmia"
+          ],
+          "mode": "keys"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 20,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "vilt/multimodal",
+      "dataset": "food101",
+      "backbone": "vilt",
+      "mia_target": null,
+      "num_classes": 8,
+      "query": "max",
+      "modality": "multimodal",
+      "diverse_select": true
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 20,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "vilt/text",
+      "dataset": "food101",
+      "backbone": "vilt",
+      "mia_target": null,
+      "num_classes": 8,
+      "query": "max",
+      "modality": "text",
+      "diverse_select": true
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "clip/fashion",
+      "dataset": "fashion",
+      "backbone": "clip",
+      "mia_target": null,
+      "num_classes": 10,
+      "modality": "multimodal"
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "vilt/multimodal",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "vilt/multimodal"
+    },
+    {
+      "name": "vilt/text",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "vilt/text"
+    },
+    {
+      "name": "clip/fashion",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "clip/fashion"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure20",
+      "title": "Text and multimodal membership inference",
+      "sources": [
+        "vilt/multimodal",
+        "vilt/text",
+        "clip/fashion"
+      ],
+      "panels": [
+        {
+          "title": "(a) Multimodal (image + text), ViLT on UPMC Food-101",
+          "sources": [
+            "vilt/multimodal"
+          ],
+          "methods": [
+            "promptmia"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": [
+            0,
+            100
+          ]
+        },
+        {
+          "title": "(b) Text only, ViLT on UPMC Food-101",
+          "sources": [
+            "vilt/text"
+          ],
+          "methods": [
+            "promptmia"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": [
+            0,
+            100
+          ]
+        },
+        {
+          "title": "(c) Image + text, CLIP ViT-B/32 on Fashion-Product",
+          "sources": [
+            "clip/fashion"
+          ],
+          "methods": [
+            "promptmia"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": [
+            0,
+            100
+          ]
+        }
+      ],
+      "figsize": [
+        18,
+        4.5
+      ],
+      "bands": true,
+      "legend_y": -0.04
+    }
+  ]
+}

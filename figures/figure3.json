@@ -1,0 +1,32 @@
+{
+  "id": "figure3",
+  "sources": [
+    "embedding/cifar10"
+  ],
+  "panels": [
+    {
+      "title": "t-SNE of Benign Keys vs. Query Vectors in Trainset",
+      "sources": [
+        "embedding/cifar10"
+      ],
+      "mode": "scatter",
+      "n_clusters": 5
+    },
+    {
+      "title": "K-Means Clustering of Query Vectors and Keys",
+      "sources": [
+        "embedding/cifar10"
+      ],
+      "mode": "kmeans",
+      "n_clusters": 5
+    },
+    {
+      "title": "Gaussian Mixture Query Model",
+      "sources": [
+        "embedding/cifar10"
+      ],
+      "mode": "gaussian",
+      "n_clusters": 5
+    }
+  ]
+}

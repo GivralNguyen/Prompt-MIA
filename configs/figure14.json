@@ -1,0 +1,301 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_deit_b16",
+      "dataset": "cifar10",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_deit_b16",
+      "dataset": "cifar100",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_deit_b16",
+      "dataset": "tinyimagenet",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_deit_b16",
+      "dataset": "fourdataset",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "main/cifar10_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_deit_b16"
+    },
+    {
+      "name": "main/cifar100_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_deit_b16"
+    },
+    {
+      "name": "main/tinyimagenet_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_deit_b16"
+    },
+    {
+      "name": "main/fourdataset_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_deit_b16"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure14",
+      "title": "PromptMIA vs Naive on DeiT - Advantage & Attack Success Rate across Datasets",
+      "sources": [
+        "main/cifar10_deit_b16",
+        "main/cifar100_deit_b16",
+        "main/tinyimagenet_deit_b16",
+        "main/fourdataset_deit_b16"
+      ],
+      "panels": [
+        {
+          "title": "CIFAR10 (DeiT)",
+          "sources": [
+            "main/cifar10_deit_b16"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        },
+        {
+          "title": "CIFAR100 (DeiT)",
+          "sources": [
+            "main/cifar100_deit_b16"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        },
+        {
+          "title": "TinyImageNet (DeiT)",
+          "sources": [
+            "main/tinyimagenet_deit_b16"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        },
+        {
+          "title": "FourDataset (DeiT)",
+          "sources": [
+            "main/fourdataset_deit_b16"
+          ],
+          "methods": [
+            "promptmia",
+            "naive"
+          ],
+          "metrics": [
+            "advantage",
+            "asr"
+          ],
+          "ylim": null
+        }
+      ],
+      "ncols": 4
+    }
+  ]
+}

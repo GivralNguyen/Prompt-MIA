@@ -1,0 +1,217 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 10,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M10",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M20",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 30,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M30",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 40,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M40",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "extreme_embedding/cifar100_M10",
+      "kind": "embedding",
+      "run": "extreme/cifar100_M10",
+      "n_queries": 200,
+      "query_sampling": "random",
+      "variant": "benign",
+      "query_source": "cache"
+    },
+    {
+      "name": "extreme_embedding/cifar100_M20",
+      "kind": "embedding",
+      "run": "extreme/cifar100_M20",
+      "n_queries": 200,
+      "query_sampling": "random",
+      "variant": "benign",
+      "query_source": "cache"
+    },
+    {
+      "name": "extreme_embedding/cifar100_M30",
+      "kind": "embedding",
+      "run": "extreme/cifar100_M30",
+      "n_queries": 200,
+      "query_sampling": "random",
+      "variant": "benign",
+      "query_source": "cache"
+    },
+    {
+      "name": "extreme_embedding/cifar100_M40",
+      "kind": "embedding",
+      "run": "extreme/cifar100_M40",
+      "n_queries": 200,
+      "query_sampling": "random",
+      "variant": "benign",
+      "query_source": "cache"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure11",
+      "title": "Gaussian mixture query model under extreme non-IID",
+      "sources": [
+        "extreme_embedding/cifar100_M10",
+        "extreme_embedding/cifar100_M20",
+        "extreme_embedding/cifar100_M30",
+        "extreme_embedding/cifar100_M40"
+      ],
+      "panels": [
+        {
+          "title": "CIFAR-100, extreme non-IID, M = 10",
+          "sources": [
+            "extreme_embedding/cifar100_M10"
+          ],
+          "mode": "gaussian",
+          "n_clusters": 4
+        },
+        {
+          "title": "CIFAR-100, extreme non-IID, M = 20",
+          "sources": [
+            "extreme_embedding/cifar100_M20"
+          ],
+          "mode": "gaussian",
+          "n_clusters": 5
+        },
+        {
+          "title": "CIFAR-100, extreme non-IID, M = 30",
+          "sources": [
+            "extreme_embedding/cifar100_M30"
+          ],
+          "mode": "gaussian",
+          "n_clusters": 8
+        },
+        {
+          "title": "CIFAR-100, extreme non-IID, M = 40",
+          "sources": [
+            "extreme_embedding/cifar100_M40"
+          ],
+          "mode": "gaussian",
+          "n_clusters": 11
+        }
+      ],
+      "ncols": 2
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Method & Precision & Recall & F1 \\
+\midrule
+IsolationForest & 0.04 (0.01) & 1.00 (0.00) & 0.08 (0.02) \\
+LocalOutlierFactor & 0.00 (0.00) & 0.00 (0.00) & 0.00 (0.00) \\
+OneClassSVM & 0.05 (0.01) & 0.49 (0.03) & 0.08 (0.02) \\
+EllipticEnvelope & 0.03 (0.01) & 0.24 (0.03) & 0.05 (0.02) \\
+\bottomrule
+\end{tabular}
+\caption{Outlier detection averaged over nine dataset/model combinations}
+\label{tab:table1}
+\end{table}

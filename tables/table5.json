@@ -1,0 +1,43 @@
+{
+  "id": "table5",
+  "sources": [
+    "extreme_attack/cifar100_M10",
+    "extreme_attack/cifar100_M20",
+    "extreme_attack/cifar100_M30",
+    "extreme_attack/cifar100_M40",
+    "extreme_attack/tinyimagenet_M10",
+    "extreme_attack/tinyimagenet_M20",
+    "extreme_attack/tinyimagenet_M30",
+    "extreme_attack/tinyimagenet_M40"
+  ],
+  "rows": [
+    {
+      "M": 10,
+      "cifar100_B64": 98.00799999999998,
+      "cifar100_B256": 91.438,
+      "tinyimagenet_B64": 93.35900000000001,
+      "tinyimagenet_B256": 74.02399999999999
+    },
+    {
+      "M": 20,
+      "cifar100_B64": 99.14399999999999,
+      "cifar100_B256": 96.59600000000002,
+      "tinyimagenet_B64": 99.07199999999999,
+      "tinyimagenet_B256": 95.63900000000001
+    },
+    {
+      "M": 30,
+      "cifar100_B64": 99.362,
+      "cifar100_B256": 97.514,
+      "tinyimagenet_B64": 99.419,
+      "tinyimagenet_B256": 97.649
+    },
+    {
+      "M": 40,
+      "cifar100_B64": 99.51299999999999,
+      "cifar100_B256": 97.924,
+      "tinyimagenet_B64": 99.507,
+      "tinyimagenet_B256": 97.90600000000002
+    }
+  ]
+}

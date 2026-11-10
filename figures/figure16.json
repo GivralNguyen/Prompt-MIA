@@ -1,0 +1,63 @@
+{
+  "id": "figure16",
+  "sources": [
+    "outlier_embedding/benign"
+  ],
+  "panels": [
+    {
+      "detector": "IsolationForest",
+      "flagged": [
+        0,
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19
+      ],
+      "injected": [],
+      "true_positives": 0,
+      "false_positives": 15
+    },
+    {
+      "detector": "LocalOutlierFactor",
+      "flagged": [],
+      "injected": [],
+      "true_positives": 0,
+      "false_positives": 0
+    },
+    {
+      "detector": "OneClassSVM",
+      "flagged": [
+        0,
+        1,
+        19
+      ],
+      "injected": [],
+      "true_positives": 0,
+      "false_positives": 3
+    },
+    {
+      "detector": "EllipticEnvelope",
+      "flagged": [
+        2,
+        4,
+        8,
+        10,
+        12,
+        18
+      ],
+      "injected": [],
+      "true_positives": 0,
+      "false_positives": 6
+    }
+  ]
+}

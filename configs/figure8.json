@@ -1,0 +1,13 @@
+{
+  "training": [],
+  "evaluation": [],
+  "artifacts": [
+    {
+      "id": "figure8",
+      "title": "Federated prompt tuning workflow",
+      "sources": [],
+      "diagram": "federated_training",
+      "static_asset": "assets/figure8.png"
+    }
+  ]
+}

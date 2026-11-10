@@ -1,0 +1,3 @@
+dataset,model,clean_accuracy,clean_std,injected_accuracy,injected_std,clean_runs,injected_runs
+cifar10,deit_b16,0.948,0.0,0.9478,0.0,1,1
+fourdataset,vit_b32,0.6666999800119928,0.0,0.6654007595442735,0.0,1,1

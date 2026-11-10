@@ -1,0 +1,731 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_convit_base",
+      "dataset": "cifar10",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_deit_b16",
+      "dataset": "cifar10",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_vit_b32",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_convit_base",
+      "dataset": "cifar100",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_deit_b16",
+      "dataset": "cifar100",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_vit_b32",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_convit_base",
+      "dataset": "tinyimagenet",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_deit_b16",
+      "dataset": "tinyimagenet",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_vit_b32",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_convit_base",
+      "dataset": "fourdataset",
+      "backbone": "convit_base",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_deit_b16",
+      "dataset": "fourdataset",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "loss_promptmia/cifar10_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/cifar10_vit_b32",
+      "kind": "loss",
+      "run": "base/cifar10_vit_b32",
+      "attack_source": "loss_promptmia/cifar10_vit_b32",
+      "depends_on": [
+        "loss_promptmia/cifar10_vit_b32"
+      ]
+    },
+    {
+      "name": "loss_promptmia/cifar10_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_convit_base",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/cifar10_convit_base",
+      "kind": "loss",
+      "run": "base/cifar10_convit_base",
+      "attack_source": "loss_promptmia/cifar10_convit_base",
+      "depends_on": [
+        "loss_promptmia/cifar10_convit_base"
+      ]
+    },
+    {
+      "name": "loss_promptmia/cifar10_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_deit_b16",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/cifar10_deit_b16",
+      "kind": "loss",
+      "run": "base/cifar10_deit_b16",
+      "attack_source": "loss_promptmia/cifar10_deit_b16",
+      "depends_on": [
+        "loss_promptmia/cifar10_deit_b16"
+      ]
+    },
+    {
+      "name": "loss_promptmia/cifar100_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/cifar100_vit_b32",
+      "kind": "loss",
+      "run": "base/cifar100_vit_b32",
+      "attack_source": "loss_promptmia/cifar100_vit_b32",
+      "depends_on": [
+        "loss_promptmia/cifar100_vit_b32"
+      ]
+    },
+    {
+      "name": "loss_promptmia/cifar100_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_convit_base",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/cifar100_convit_base",
+      "kind": "loss",
+      "run": "base/cifar100_convit_base",
+      "attack_source": "loss_promptmia/cifar100_convit_base",
+      "depends_on": [
+        "loss_promptmia/cifar100_convit_base"
+      ]
+    },
+    {
+      "name": "loss_promptmia/cifar100_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_deit_b16",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/cifar100_deit_b16",
+      "kind": "loss",
+      "run": "base/cifar100_deit_b16",
+      "attack_source": "loss_promptmia/cifar100_deit_b16",
+      "depends_on": [
+        "loss_promptmia/cifar100_deit_b16"
+      ]
+    },
+    {
+      "name": "loss_promptmia/tinyimagenet_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/tinyimagenet_vit_b32",
+      "kind": "loss",
+      "run": "base/tinyimagenet_vit_b32",
+      "attack_source": "loss_promptmia/tinyimagenet_vit_b32",
+      "depends_on": [
+        "loss_promptmia/tinyimagenet_vit_b32"
+      ]
+    },
+    {
+      "name": "loss_promptmia/tinyimagenet_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_convit_base",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/tinyimagenet_convit_base",
+      "kind": "loss",
+      "run": "base/tinyimagenet_convit_base",
+      "attack_source": "loss_promptmia/tinyimagenet_convit_base",
+      "depends_on": [
+        "loss_promptmia/tinyimagenet_convit_base"
+      ]
+    },
+    {
+      "name": "loss_promptmia/tinyimagenet_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_deit_b16",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/tinyimagenet_deit_b16",
+      "kind": "loss",
+      "run": "base/tinyimagenet_deit_b16",
+      "attack_source": "loss_promptmia/tinyimagenet_deit_b16",
+      "depends_on": [
+        "loss_promptmia/tinyimagenet_deit_b16"
+      ]
+    },
+    {
+      "name": "loss_promptmia/fourdataset_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/fourdataset_vit_b32",
+      "kind": "loss",
+      "run": "base/fourdataset_vit_b32",
+      "attack_source": "loss_promptmia/fourdataset_vit_b32",
+      "depends_on": [
+        "loss_promptmia/fourdataset_vit_b32"
+      ]
+    },
+    {
+      "name": "loss_promptmia/fourdataset_convit_base",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_convit_base",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/fourdataset_convit_base",
+      "kind": "loss",
+      "run": "base/fourdataset_convit_base",
+      "attack_source": "loss_promptmia/fourdataset_convit_base",
+      "depends_on": [
+        "loss_promptmia/fourdataset_convit_base"
+      ]
+    },
+    {
+      "name": "loss_promptmia/fourdataset_deit_b16",
+      "kind": "attack",
+      "batch_sizes": [
+        64
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_deit_b16",
+      "population": "client",
+      "client": 0
+    },
+    {
+      "name": "loss/fourdataset_deit_b16",
+      "kind": "loss",
+      "run": "base/fourdataset_deit_b16",
+      "attack_source": "loss_promptmia/fourdataset_deit_b16",
+      "depends_on": [
+        "loss_promptmia/fourdataset_deit_b16"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure5",
+      "title": "Advantage of PromptMIA and loss-based federated MIAs",
+      "sources": [
+        "loss/cifar10_vit_b32",
+        "loss/cifar10_convit_base",
+        "loss/cifar10_deit_b16",
+        "loss/cifar100_vit_b32",
+        "loss/cifar100_convit_base",
+        "loss/cifar100_deit_b16",
+        "loss/tinyimagenet_vit_b32",
+        "loss/tinyimagenet_convit_base",
+        "loss/tinyimagenet_deit_b16",
+        "loss/fourdataset_vit_b32",
+        "loss/fourdataset_convit_base",
+        "loss/fourdataset_deit_b16"
+      ],
+      "threshold_modes": [
+        "matched",
+        "best"
+      ],
+      "metrics": [
+        "advantage"
+      ],
+      "aggregate": "backbones",
+      "ddof": 0
+    }
+  ]
+}

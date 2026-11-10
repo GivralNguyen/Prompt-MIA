@@ -1,0 +1,424 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 10,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M10",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M20",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 30,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M30",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 40,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/cifar100_M40",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 10
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 10,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/tinyimagenet_M10",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 20
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/tinyimagenet_M20",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 20
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 30,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/tinyimagenet_M30",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 20
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 40,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "extreme",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "extreme/tinyimagenet_M40",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "n_dominated": 20
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "extreme_attack/cifar100_M10",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/cifar100_M10"
+    },
+    {
+      "name": "extreme_attack/cifar100_M20",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/cifar100_M20"
+    },
+    {
+      "name": "extreme_attack/cifar100_M30",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/cifar100_M30"
+    },
+    {
+      "name": "extreme_attack/cifar100_M40",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/cifar100_M40"
+    },
+    {
+      "name": "extreme_attack/tinyimagenet_M10",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/tinyimagenet_M10"
+    },
+    {
+      "name": "extreme_attack/tinyimagenet_M20",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/tinyimagenet_M20"
+    },
+    {
+      "name": "extreme_attack/tinyimagenet_M30",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/tinyimagenet_M30"
+    },
+    {
+      "name": "extreme_attack/tinyimagenet_M40",
+      "kind": "attack",
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "extreme/tinyimagenet_M40"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "table5",
+      "title": "Attack success rate under extreme non-IID data",
+      "sources": [
+        "extreme_attack/cifar100_M10",
+        "extreme_attack/cifar100_M20",
+        "extreme_attack/cifar100_M30",
+        "extreme_attack/cifar100_M40",
+        "extreme_attack/tinyimagenet_M10",
+        "extreme_attack/tinyimagenet_M20",
+        "extreme_attack/tinyimagenet_M30",
+        "extreme_attack/tinyimagenet_M40"
+      ],
+      "pool_sizes": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "batch_sizes": [
+        64,
+        256
+      ]
+    }
+  ]
+}

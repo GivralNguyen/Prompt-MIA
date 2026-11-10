@@ -1,0 +1,216 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_vit_b32",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_vit_b32",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_vit_b32",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "distinctiveness/cifar10",
+      "kind": "distinctiveness",
+      "run": "base/cifar10_vit_b32",
+      "n_targets": 2000,
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "n_batches": 32,
+      "seed": 0,
+      "chunk": 250,
+      "score": "s_max",
+      "bins": 5,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "distinctiveness/cifar100",
+      "kind": "distinctiveness",
+      "run": "base/cifar100_vit_b32",
+      "n_targets": 2000,
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "n_batches": 32,
+      "seed": 0,
+      "chunk": 250,
+      "score": "s_max",
+      "bins": 5,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "distinctiveness/tinyimagenet",
+      "kind": "distinctiveness",
+      "run": "base/tinyimagenet_vit_b32",
+      "n_targets": 2000,
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "n_batches": 32,
+      "seed": 0,
+      "chunk": 250,
+      "score": "s_max",
+      "bins": 5,
+      "delta_min": 0.02,
+      "delta": 0.05
+    },
+    {
+      "name": "distinctiveness/fourdataset",
+      "kind": "distinctiveness",
+      "run": "base/fourdataset_vit_b32",
+      "n_targets": 2000,
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "n_batches": 32,
+      "seed": 0,
+      "chunk": 250,
+      "score": "s_max",
+      "bins": 5,
+      "delta_min": 0.02,
+      "delta": 0.05
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "table7",
+      "title": "False-positive rate and attack success by target distinctiveness",
+      "sources": [
+        "distinctiveness/cifar10",
+        "distinctiveness/cifar100",
+        "distinctiveness/tinyimagenet",
+        "distinctiveness/fourdataset"
+      ],
+      "batch_sizes": [
+        64,
+        256
+      ],
+      "bins": 5,
+      "score": "s_max"
+    }
+  ]
+}

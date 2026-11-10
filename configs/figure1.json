@@ -1,0 +1,13 @@
+{
+  "training": [],
+  "evaluation": [],
+  "artifacts": [
+    {
+      "id": "figure1",
+      "title": "PromptMIA workflow",
+      "sources": [],
+      "diagram": "attack",
+      "static_asset": "assets/figure1.png"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "outlier_embedding/benign",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "variant": "benign",
+      "include_queries": false,
+      "detect_outliers": true,
+      "target": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure16",
+      "title": "Outlier detectors on benign keys",
+      "sources": [
+        "outlier_embedding/benign"
+      ],
+      "panels": [
+        {
+          "title": "IsolationForest",
+          "sources": [
+            "outlier_embedding/benign"
+          ],
+          "mode": "keys",
+          "detector": "IsolationForest"
+        },
+        {
+          "title": "LocalOutlierFactor",
+          "sources": [
+            "outlier_embedding/benign"
+          ],
+          "mode": "keys",
+          "detector": "LocalOutlierFactor"
+        },
+        {
+          "title": "OneClassSVM",
+          "sources": [
+            "outlier_embedding/benign"
+          ],
+          "mode": "keys",
+          "detector": "OneClassSVM"
+        },
+        {
+          "title": "EllipticEnvelope",
+          "sources": [
+            "outlier_embedding/benign"
+          ],
+          "mode": "keys",
+          "detector": "EllipticEnvelope"
+        }
+      ],
+      "ncols": 4
+    }
+  ]
+}

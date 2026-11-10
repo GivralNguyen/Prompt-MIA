@@ -1,0 +1,47 @@
+\begin{table}[htbp]
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & Model & Method & Precision & Recall & F1 \\
+\midrule
+CIFAR-10 & vit\_b32 & IsolationForest & 0.0277 & 1.0000 & 0.0539 \\
+CIFAR-10 & vit\_b32 & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+CIFAR-10 & vit\_b32 & OneClassSVM & 0.0625 & 0.5000 & 0.1112 \\
+CIFAR-10 & vit\_b32 & EllipticEnvelope & 0.0155 & 0.2275 & 0.0291 \\
+CIFAR-10 & convit\_base & IsolationForest & 0.0236 & 1.0000 & 0.0462 \\
+CIFAR-10 & convit\_base & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+CIFAR-10 & convit\_base & OneClassSVM & 0.0585 & 0.4925 & 0.1045 \\
+CIFAR-10 & convit\_base & EllipticEnvelope & 0.0511 & 0.2875 & 0.0868 \\
+CIFAR-10 & deit\_b16 & IsolationForest & 0.0461 & 1.0000 & 0.0881 \\
+CIFAR-10 & deit\_b16 & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+CIFAR-10 & deit\_b16 & OneClassSVM & 0.0690 & 0.5450 & 0.1225 \\
+CIFAR-10 & deit\_b16 & EllipticEnvelope & 0.0182 & 0.2250 & 0.0337 \\
+CIFAR-100 & vit\_b32 & IsolationForest & 0.0503 & 1.0000 & 0.0958 \\
+CIFAR-100 & vit\_b32 & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+CIFAR-100 & vit\_b32 & OneClassSVM & 0.0321 & 0.4800 & 0.0602 \\
+CIFAR-100 & vit\_b32 & EllipticEnvelope & 0.0397 & 0.2200 & 0.0673 \\
+CIFAR-100 & convit\_base & IsolationForest & 0.0507 & 1.0000 & 0.0965 \\
+CIFAR-100 & convit\_base & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+CIFAR-100 & convit\_base & OneClassSVM & 0.0334 & 0.4900 & 0.0625 \\
+CIFAR-100 & convit\_base & EllipticEnvelope & 0.0352 & 0.2775 & 0.0625 \\
+CIFAR-100 & deit\_b16 & IsolationForest & 0.0377 & 1.0000 & 0.0727 \\
+CIFAR-100 & deit\_b16 & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+CIFAR-100 & deit\_b16 & OneClassSVM & 0.0440 & 0.4450 & 0.0801 \\
+CIFAR-100 & deit\_b16 & EllipticEnvelope & 0.0195 & 0.2400 & 0.0360 \\
+TinyImageNet & vit\_b32 & IsolationForest & 0.0215 & 1.0000 & 0.0421 \\
+TinyImageNet & vit\_b32 & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+TinyImageNet & vit\_b32 & OneClassSVM & 0.0379 & 0.4800 & 0.0702 \\
+TinyImageNet & vit\_b32 & EllipticEnvelope & 0.0186 & 0.2300 & 0.0343 \\
+TinyImageNet & convit\_base & IsolationForest & 0.0566 & 1.0000 & 0.1071 \\
+TinyImageNet & convit\_base & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+TinyImageNet & convit\_base & OneClassSVM & 0.0405 & 0.5075 & 0.0751 \\
+TinyImageNet & convit\_base & EllipticEnvelope & 0.0353 & 0.2775 & 0.0627 \\
+TinyImageNet & deit\_b16 & IsolationForest & 0.0458 & 1.0000 & 0.0876 \\
+TinyImageNet & deit\_b16 & LocalOutlierFactor & 0.0000 & 0.0000 & 0.0000 \\
+TinyImageNet & deit\_b16 & OneClassSVM & 0.0314 & 0.4625 & 0.0588 \\
+TinyImageNet & deit\_b16 & EllipticEnvelope & 0.0126 & 0.2125 & 0.0239 \\
+\bottomrule
+\end{tabular}
+\caption{Outlier detection by dataset, model, and detector}
+\label{tab:table6}
+\end{table}

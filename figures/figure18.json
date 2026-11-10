@@ -1,0 +1,31 @@
+{
+  "id": "figure18",
+  "sources": [
+    "embedding/cifar10_round0",
+    "embedding/cifar10_round1",
+    "embedding/cifar10_round20",
+    "embedding/cifar10_round60"
+  ],
+  "panels": [
+    {
+      "sources": [
+        "embedding/cifar10_round0"
+      ]
+    },
+    {
+      "sources": [
+        "embedding/cifar10_round1"
+      ]
+    },
+    {
+      "sources": [
+        "embedding/cifar10_round20"
+      ]
+    },
+    {
+      "sources": [
+        "embedding/cifar10_round60"
+      ]
+    }
+  ]
+}

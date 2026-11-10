@@ -1,0 +1,4454 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_vit_b32",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_vit_b32",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_vit_b32",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 12,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar10_M12",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 12,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar100_M12",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 12,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/tinyimagenet_M12",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 12,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/fourdataset_M12",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 16,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar10_M16",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 16,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar100_M16",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 16,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/tinyimagenet_M16",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 16,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/fourdataset_M16",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 24,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar10_M24",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 24,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar100_M24",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 24,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/tinyimagenet_M24",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 24,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/fourdataset_M24",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 2,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar10_N2",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 2,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar100_N2",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 2,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/tinyimagenet_N2",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 2,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/fourdataset_N2",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 6,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar10_N6",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 6,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar100_N6",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 6,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/tinyimagenet_N6",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 6,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/fourdataset_N6",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 8,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar10_N8",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 8,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/cifar100_N8",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 8,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/tinyimagenet_N8",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 8,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "ablation/fourdataset_N8",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.0001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "dynamics/cifar10",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.0001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "dynamics/cifar100",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.0001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "dynamics/tinyimagenet",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.0001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "dynamics/fourdataset",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 1,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/cifar10_E1",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 1,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/cifar100_E1",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 1,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/tinyimagenet_E1",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 1,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/fourdataset_E1",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 10,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/cifar10_E10",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 10,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/cifar100_E10",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 10,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/tinyimagenet_E10",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 10,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/fourdataset_E10",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 20,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/cifar10_E20",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 20,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/cifar100_E20",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 20,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/tinyimagenet_E20",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 20,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "epochs/fourdataset_E20",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "ablation/cifar10_M12",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar10_M12"
+    },
+    {
+      "name": "ablation/cifar100_M12",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar100_M12"
+    },
+    {
+      "name": "ablation/tinyimagenet_M12",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/tinyimagenet_M12"
+    },
+    {
+      "name": "ablation/fourdataset_M12",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/fourdataset_M12"
+    },
+    {
+      "name": "ablation/cifar10_M16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar10_M16"
+    },
+    {
+      "name": "ablation/cifar100_M16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar100_M16"
+    },
+    {
+      "name": "ablation/tinyimagenet_M16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/tinyimagenet_M16"
+    },
+    {
+      "name": "ablation/fourdataset_M16",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/fourdataset_M16"
+    },
+    {
+      "name": "main/cifar10_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "main/cifar100_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "main/tinyimagenet_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "main/fourdataset_vit_b32",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia",
+        "naive"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_M24",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar10_M24"
+    },
+    {
+      "name": "ablation/cifar100_M24",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar100_M24"
+    },
+    {
+      "name": "ablation/tinyimagenet_M24",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/tinyimagenet_M24"
+    },
+    {
+      "name": "ablation/fourdataset_M24",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/fourdataset_M24"
+    },
+    {
+      "name": "ablation/cifar10_N2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar10_N2",
+      "N": 2
+    },
+    {
+      "name": "ablation/cifar100_N2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar100_N2",
+      "N": 2
+    },
+    {
+      "name": "ablation/tinyimagenet_N2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/tinyimagenet_N2",
+      "N": 2
+    },
+    {
+      "name": "ablation/fourdataset_N2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/fourdataset_N2",
+      "N": 2
+    },
+    {
+      "name": "ablation/cifar10_N6",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar10_N6",
+      "N": 6
+    },
+    {
+      "name": "ablation/cifar100_N6",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar100_N6",
+      "N": 6
+    },
+    {
+      "name": "ablation/tinyimagenet_N6",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/tinyimagenet_N6",
+      "N": 6
+    },
+    {
+      "name": "ablation/fourdataset_N6",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/fourdataset_N6",
+      "N": 6
+    },
+    {
+      "name": "ablation/cifar10_N8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar10_N8",
+      "N": 8
+    },
+    {
+      "name": "ablation/cifar100_N8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/cifar100_N8",
+      "N": 8
+    },
+    {
+      "name": "ablation/tinyimagenet_N8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/tinyimagenet_N8",
+      "N": 8
+    },
+    {
+      "name": "ablation/fourdataset_N8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "ablation/fourdataset_N8",
+      "N": 8
+    },
+    {
+      "name": "ablation/cifar10_delta_min0.05",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.05,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta_min0.05",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.05,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta_min0.05",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.05,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta_min0.05",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.05,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta_min0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.1,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta_min0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.1,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta_min0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.1,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta_min0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.1,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta_min0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.2,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta_min0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.2,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta_min0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.2,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta_min0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.2,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta_min0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.3,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta_min0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.3,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta_min0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.3,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta_min0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.3,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta0.02",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.02,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta0.02",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.02,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta0.02",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.02,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta0.02",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.02,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.1,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.1,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.1,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta0.1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.1,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.2,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.2,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.2,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta0.2",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.2,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_delta0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.3,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32"
+    },
+    {
+      "name": "ablation/cifar100_delta0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.3,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32"
+    },
+    {
+      "name": "ablation/tinyimagenet_delta0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.3,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32"
+    },
+    {
+      "name": "ablation/fourdataset_delta0.3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.3,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32"
+    },
+    {
+      "name": "ablation/cifar10_round0",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 0
+    },
+    {
+      "name": "ablation/cifar100_round0",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 0
+    },
+    {
+      "name": "ablation/tinyimagenet_round0",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 0
+    },
+    {
+      "name": "ablation/fourdataset_round0",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 0
+    },
+    {
+      "name": "ablation/cifar10_round1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 1
+    },
+    {
+      "name": "ablation/cifar100_round1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 1
+    },
+    {
+      "name": "ablation/tinyimagenet_round1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 1
+    },
+    {
+      "name": "ablation/fourdataset_round1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 1
+    },
+    {
+      "name": "ablation/cifar10_round10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 10
+    },
+    {
+      "name": "ablation/cifar100_round10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 10
+    },
+    {
+      "name": "ablation/tinyimagenet_round10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 10
+    },
+    {
+      "name": "ablation/fourdataset_round10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 10
+    },
+    {
+      "name": "ablation/cifar10_round20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 20
+    },
+    {
+      "name": "ablation/cifar100_round20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 20
+    },
+    {
+      "name": "ablation/tinyimagenet_round20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 20
+    },
+    {
+      "name": "ablation/fourdataset_round20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 20
+    },
+    {
+      "name": "ablation/cifar10_round30",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 30
+    },
+    {
+      "name": "ablation/cifar100_round30",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 30
+    },
+    {
+      "name": "ablation/tinyimagenet_round30",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 30
+    },
+    {
+      "name": "ablation/fourdataset_round30",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 30
+    },
+    {
+      "name": "ablation/cifar10_round40",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 40
+    },
+    {
+      "name": "ablation/cifar100_round40",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 40
+    },
+    {
+      "name": "ablation/tinyimagenet_round40",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 40
+    },
+    {
+      "name": "ablation/fourdataset_round40",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 40
+    },
+    {
+      "name": "ablation/cifar10_round50",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 50
+    },
+    {
+      "name": "ablation/cifar100_round50",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 50
+    },
+    {
+      "name": "ablation/tinyimagenet_round50",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 50
+    },
+    {
+      "name": "ablation/fourdataset_round50",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 50
+    },
+    {
+      "name": "ablation/cifar10_round60",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar10",
+      "round": 60
+    },
+    {
+      "name": "ablation/cifar100_round60",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/cifar100",
+      "round": 60
+    },
+    {
+      "name": "ablation/tinyimagenet_round60",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/tinyimagenet",
+      "round": 60
+    },
+    {
+      "name": "ablation/fourdataset_round60",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "dynamics/fourdataset",
+      "round": 60
+    },
+    {
+      "name": "epochs/cifar10_E1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/cifar10_E1"
+    },
+    {
+      "name": "epochs/cifar100_E1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/cifar100_E1"
+    },
+    {
+      "name": "epochs/tinyimagenet_E1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/tinyimagenet_E1"
+    },
+    {
+      "name": "epochs/fourdataset_E1",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/fourdataset_E1"
+    },
+    {
+      "name": "epochs/cifar10_E10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/cifar10_E10"
+    },
+    {
+      "name": "epochs/cifar100_E10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/cifar100_E10"
+    },
+    {
+      "name": "epochs/tinyimagenet_E10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/tinyimagenet_E10"
+    },
+    {
+      "name": "epochs/fourdataset_E10",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/fourdataset_E10"
+    },
+    {
+      "name": "epochs/cifar10_E20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/cifar10_E20"
+    },
+    {
+      "name": "epochs/cifar100_E20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/cifar100_E20"
+    },
+    {
+      "name": "epochs/tinyimagenet_E20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/tinyimagenet_E20"
+    },
+    {
+      "name": "epochs/fourdataset_E20",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 5,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "epochs/fourdataset_E20"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure17",
+      "title": "PromptMIA ablations, averaged over four datasets",
+      "sources": [
+        "ablation/cifar10_M12",
+        "ablation/cifar100_M12",
+        "ablation/tinyimagenet_M12",
+        "ablation/fourdataset_M12",
+        "ablation/cifar10_M16",
+        "ablation/cifar100_M16",
+        "ablation/tinyimagenet_M16",
+        "ablation/fourdataset_M16",
+        "main/cifar10_vit_b32",
+        "main/cifar100_vit_b32",
+        "main/tinyimagenet_vit_b32",
+        "main/fourdataset_vit_b32",
+        "ablation/cifar10_M24",
+        "ablation/cifar100_M24",
+        "ablation/tinyimagenet_M24",
+        "ablation/fourdataset_M24",
+        "ablation/cifar10_N2",
+        "ablation/cifar100_N2",
+        "ablation/tinyimagenet_N2",
+        "ablation/fourdataset_N2",
+        "ablation/cifar10_N6",
+        "ablation/cifar100_N6",
+        "ablation/tinyimagenet_N6",
+        "ablation/fourdataset_N6",
+        "ablation/cifar10_N8",
+        "ablation/cifar100_N8",
+        "ablation/tinyimagenet_N8",
+        "ablation/fourdataset_N8",
+        "ablation/cifar10_delta_min0.05",
+        "ablation/cifar100_delta_min0.05",
+        "ablation/tinyimagenet_delta_min0.05",
+        "ablation/fourdataset_delta_min0.05",
+        "ablation/cifar10_delta_min0.1",
+        "ablation/cifar100_delta_min0.1",
+        "ablation/tinyimagenet_delta_min0.1",
+        "ablation/fourdataset_delta_min0.1",
+        "ablation/cifar10_delta_min0.2",
+        "ablation/cifar100_delta_min0.2",
+        "ablation/tinyimagenet_delta_min0.2",
+        "ablation/fourdataset_delta_min0.2",
+        "ablation/cifar10_delta_min0.3",
+        "ablation/cifar100_delta_min0.3",
+        "ablation/tinyimagenet_delta_min0.3",
+        "ablation/fourdataset_delta_min0.3",
+        "ablation/cifar10_delta0.02",
+        "ablation/cifar100_delta0.02",
+        "ablation/tinyimagenet_delta0.02",
+        "ablation/fourdataset_delta0.02",
+        "ablation/cifar10_delta0.1",
+        "ablation/cifar100_delta0.1",
+        "ablation/tinyimagenet_delta0.1",
+        "ablation/fourdataset_delta0.1",
+        "ablation/cifar10_delta0.2",
+        "ablation/cifar100_delta0.2",
+        "ablation/tinyimagenet_delta0.2",
+        "ablation/fourdataset_delta0.2",
+        "ablation/cifar10_delta0.3",
+        "ablation/cifar100_delta0.3",
+        "ablation/tinyimagenet_delta0.3",
+        "ablation/fourdataset_delta0.3",
+        "ablation/cifar10_round0",
+        "ablation/cifar100_round0",
+        "ablation/tinyimagenet_round0",
+        "ablation/fourdataset_round0",
+        "ablation/cifar10_round1",
+        "ablation/cifar100_round1",
+        "ablation/tinyimagenet_round1",
+        "ablation/fourdataset_round1",
+        "ablation/cifar10_round10",
+        "ablation/cifar100_round10",
+        "ablation/tinyimagenet_round10",
+        "ablation/fourdataset_round10",
+        "ablation/cifar10_round20",
+        "ablation/cifar100_round20",
+        "ablation/tinyimagenet_round20",
+        "ablation/fourdataset_round20",
+        "ablation/cifar10_round30",
+        "ablation/cifar100_round30",
+        "ablation/tinyimagenet_round30",
+        "ablation/fourdataset_round30",
+        "ablation/cifar10_round40",
+        "ablation/cifar100_round40",
+        "ablation/tinyimagenet_round40",
+        "ablation/fourdataset_round40",
+        "ablation/cifar10_round50",
+        "ablation/cifar100_round50",
+        "ablation/tinyimagenet_round50",
+        "ablation/fourdataset_round50",
+        "ablation/cifar10_round60",
+        "ablation/cifar100_round60",
+        "ablation/tinyimagenet_round60",
+        "ablation/fourdataset_round60",
+        "epochs/cifar10_E1",
+        "epochs/cifar100_E1",
+        "epochs/tinyimagenet_E1",
+        "epochs/fourdataset_E1",
+        "epochs/cifar10_E10",
+        "epochs/cifar100_E10",
+        "epochs/tinyimagenet_E10",
+        "epochs/fourdataset_E10",
+        "epochs/cifar10_E20",
+        "epochs/cifar100_E20",
+        "epochs/tinyimagenet_E20",
+        "epochs/fourdataset_E20"
+      ],
+      "panels": [
+        {
+          "title": "Impact of Pool Size on Attack Success Rate",
+          "sources": [
+            "ablation/cifar10_M12",
+            "ablation/cifar100_M12",
+            "ablation/tinyimagenet_M12",
+            "ablation/fourdataset_M12",
+            "ablation/cifar10_M16",
+            "ablation/cifar100_M16",
+            "ablation/tinyimagenet_M16",
+            "ablation/fourdataset_M16",
+            "main/cifar10_vit_b32",
+            "main/cifar100_vit_b32",
+            "main/tinyimagenet_vit_b32",
+            "main/fourdataset_vit_b32",
+            "ablation/cifar10_M24",
+            "ablation/cifar100_M24",
+            "ablation/tinyimagenet_M24",
+            "ablation/fourdataset_M24"
+          ],
+          "curves": [
+            {
+              "label": "M=12",
+              "sources": [
+                "ablation/cifar10_M12",
+                "ablation/cifar100_M12",
+                "ablation/tinyimagenet_M12",
+                "ablation/fourdataset_M12"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "M=16",
+              "sources": [
+                "ablation/cifar10_M16",
+                "ablation/cifar100_M16",
+                "ablation/tinyimagenet_M16",
+                "ablation/fourdataset_M16"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "M=20",
+              "sources": [
+                "main/cifar10_vit_b32",
+                "main/cifar100_vit_b32",
+                "main/tinyimagenet_vit_b32",
+                "main/fourdataset_vit_b32"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "M=24",
+              "sources": [
+                "ablation/cifar10_M24",
+                "ablation/cifar100_M24",
+                "ablation/tinyimagenet_M24",
+                "ablation/fourdataset_M24"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            }
+          ],
+          "bands": false,
+          "ylim": null
+        },
+        {
+          "title": "Impact of Prompt Selection Size on Attack Success Rate",
+          "sources": [
+            "ablation/cifar10_N2",
+            "ablation/cifar100_N2",
+            "ablation/tinyimagenet_N2",
+            "ablation/fourdataset_N2",
+            "main/cifar10_vit_b32",
+            "main/cifar100_vit_b32",
+            "main/tinyimagenet_vit_b32",
+            "main/fourdataset_vit_b32",
+            "ablation/cifar10_N6",
+            "ablation/cifar100_N6",
+            "ablation/tinyimagenet_N6",
+            "ablation/fourdataset_N6",
+            "ablation/cifar10_N8",
+            "ablation/cifar100_N8",
+            "ablation/tinyimagenet_N8",
+            "ablation/fourdataset_N8"
+          ],
+          "curves": [
+            {
+              "label": "N=2",
+              "sources": [
+                "ablation/cifar10_N2",
+                "ablation/cifar100_N2",
+                "ablation/tinyimagenet_N2",
+                "ablation/fourdataset_N2"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "N=4",
+              "sources": [
+                "main/cifar10_vit_b32",
+                "main/cifar100_vit_b32",
+                "main/tinyimagenet_vit_b32",
+                "main/fourdataset_vit_b32"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "N=6",
+              "sources": [
+                "ablation/cifar10_N6",
+                "ablation/cifar100_N6",
+                "ablation/tinyimagenet_N6",
+                "ablation/fourdataset_N6"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "N=8",
+              "sources": [
+                "ablation/cifar10_N8",
+                "ablation/cifar100_N8",
+                "ablation/tinyimagenet_N8",
+                "ablation/fourdataset_N8"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            }
+          ],
+          "bands": false,
+          "ylim": null
+        },
+        {
+          "title": "Impact of $\\delta_{min}$ on Attack Success Rate",
+          "sources": [
+            "main/cifar10_vit_b32",
+            "main/cifar100_vit_b32",
+            "main/tinyimagenet_vit_b32",
+            "main/fourdataset_vit_b32",
+            "ablation/cifar10_delta_min0.05",
+            "ablation/cifar100_delta_min0.05",
+            "ablation/tinyimagenet_delta_min0.05",
+            "ablation/fourdataset_delta_min0.05",
+            "ablation/cifar10_delta_min0.1",
+            "ablation/cifar100_delta_min0.1",
+            "ablation/tinyimagenet_delta_min0.1",
+            "ablation/fourdataset_delta_min0.1",
+            "ablation/cifar10_delta_min0.2",
+            "ablation/cifar100_delta_min0.2",
+            "ablation/tinyimagenet_delta_min0.2",
+            "ablation/fourdataset_delta_min0.2",
+            "ablation/cifar10_delta_min0.3",
+            "ablation/cifar100_delta_min0.3",
+            "ablation/tinyimagenet_delta_min0.3",
+            "ablation/fourdataset_delta_min0.3"
+          ],
+          "curves": [
+            {
+              "label": "$\\delta_{min}=0.02$",
+              "sources": [
+                "main/cifar10_vit_b32",
+                "main/cifar100_vit_b32",
+                "main/tinyimagenet_vit_b32",
+                "main/fourdataset_vit_b32"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\delta_{min}=0.05$",
+              "sources": [
+                "ablation/cifar10_delta_min0.05",
+                "ablation/cifar100_delta_min0.05",
+                "ablation/tinyimagenet_delta_min0.05",
+                "ablation/fourdataset_delta_min0.05"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\delta_{min}=0.10$",
+              "sources": [
+                "ablation/cifar10_delta_min0.1",
+                "ablation/cifar100_delta_min0.1",
+                "ablation/tinyimagenet_delta_min0.1",
+                "ablation/fourdataset_delta_min0.1"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\delta_{min}=0.20$",
+              "sources": [
+                "ablation/cifar10_delta_min0.2",
+                "ablation/cifar100_delta_min0.2",
+                "ablation/tinyimagenet_delta_min0.2",
+                "ablation/fourdataset_delta_min0.2"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\delta_{min}=0.30$",
+              "sources": [
+                "ablation/cifar10_delta_min0.3",
+                "ablation/cifar100_delta_min0.3",
+                "ablation/tinyimagenet_delta_min0.3",
+                "ablation/fourdataset_delta_min0.3"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            }
+          ],
+          "bands": false,
+          "ylim": null
+        },
+        {
+          "title": "Impact of $\\Delta$ on Attack Success Rate",
+          "sources": [
+            "ablation/cifar10_delta0.02",
+            "ablation/cifar100_delta0.02",
+            "ablation/tinyimagenet_delta0.02",
+            "ablation/fourdataset_delta0.02",
+            "main/cifar10_vit_b32",
+            "main/cifar100_vit_b32",
+            "main/tinyimagenet_vit_b32",
+            "main/fourdataset_vit_b32",
+            "ablation/cifar10_delta0.1",
+            "ablation/cifar100_delta0.1",
+            "ablation/tinyimagenet_delta0.1",
+            "ablation/fourdataset_delta0.1",
+            "ablation/cifar10_delta0.2",
+            "ablation/cifar100_delta0.2",
+            "ablation/tinyimagenet_delta0.2",
+            "ablation/fourdataset_delta0.2",
+            "ablation/cifar10_delta0.3",
+            "ablation/cifar100_delta0.3",
+            "ablation/tinyimagenet_delta0.3",
+            "ablation/fourdataset_delta0.3"
+          ],
+          "curves": [
+            {
+              "label": "$\\Delta=0.02$",
+              "sources": [
+                "ablation/cifar10_delta0.02",
+                "ablation/cifar100_delta0.02",
+                "ablation/tinyimagenet_delta0.02",
+                "ablation/fourdataset_delta0.02"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\Delta=0.05$",
+              "sources": [
+                "main/cifar10_vit_b32",
+                "main/cifar100_vit_b32",
+                "main/tinyimagenet_vit_b32",
+                "main/fourdataset_vit_b32"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\Delta=0.10$",
+              "sources": [
+                "ablation/cifar10_delta0.1",
+                "ablation/cifar100_delta0.1",
+                "ablation/tinyimagenet_delta0.1",
+                "ablation/fourdataset_delta0.1"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\Delta=0.20$",
+              "sources": [
+                "ablation/cifar10_delta0.2",
+                "ablation/cifar100_delta0.2",
+                "ablation/tinyimagenet_delta0.2",
+                "ablation/fourdataset_delta0.2"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "$\\Delta=0.30$",
+              "sources": [
+                "ablation/cifar10_delta0.3",
+                "ablation/cifar100_delta0.3",
+                "ablation/tinyimagenet_delta0.3",
+                "ablation/fourdataset_delta0.3"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            }
+          ],
+          "bands": false,
+          "ylim": null
+        },
+        {
+          "title": "Impact of Training Rounds (key lr 1e-4)",
+          "sources": [
+            "ablation/cifar10_round0",
+            "ablation/cifar100_round0",
+            "ablation/tinyimagenet_round0",
+            "ablation/fourdataset_round0",
+            "ablation/cifar10_round1",
+            "ablation/cifar100_round1",
+            "ablation/tinyimagenet_round1",
+            "ablation/fourdataset_round1",
+            "ablation/cifar10_round10",
+            "ablation/cifar100_round10",
+            "ablation/tinyimagenet_round10",
+            "ablation/fourdataset_round10",
+            "ablation/cifar10_round20",
+            "ablation/cifar100_round20",
+            "ablation/tinyimagenet_round20",
+            "ablation/fourdataset_round20",
+            "ablation/cifar10_round30",
+            "ablation/cifar100_round30",
+            "ablation/tinyimagenet_round30",
+            "ablation/fourdataset_round30",
+            "ablation/cifar10_round40",
+            "ablation/cifar100_round40",
+            "ablation/tinyimagenet_round40",
+            "ablation/fourdataset_round40",
+            "ablation/cifar10_round50",
+            "ablation/cifar100_round50",
+            "ablation/tinyimagenet_round50",
+            "ablation/fourdataset_round50",
+            "ablation/cifar10_round60",
+            "ablation/cifar100_round60",
+            "ablation/tinyimagenet_round60",
+            "ablation/fourdataset_round60"
+          ],
+          "curves": [
+            {
+              "label": "Round 0 (random keys)",
+              "sources": [
+                "ablation/cifar10_round0",
+                "ablation/cifar100_round0",
+                "ablation/tinyimagenet_round0",
+                "ablation/fourdataset_round0"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 1",
+              "sources": [
+                "ablation/cifar10_round1",
+                "ablation/cifar100_round1",
+                "ablation/tinyimagenet_round1",
+                "ablation/fourdataset_round1"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 10",
+              "sources": [
+                "ablation/cifar10_round10",
+                "ablation/cifar100_round10",
+                "ablation/tinyimagenet_round10",
+                "ablation/fourdataset_round10"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 20",
+              "sources": [
+                "ablation/cifar10_round20",
+                "ablation/cifar100_round20",
+                "ablation/tinyimagenet_round20",
+                "ablation/fourdataset_round20"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 30",
+              "sources": [
+                "ablation/cifar10_round30",
+                "ablation/cifar100_round30",
+                "ablation/tinyimagenet_round30",
+                "ablation/fourdataset_round30"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 40",
+              "sources": [
+                "ablation/cifar10_round40",
+                "ablation/cifar100_round40",
+                "ablation/tinyimagenet_round40",
+                "ablation/fourdataset_round40"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 50",
+              "sources": [
+                "ablation/cifar10_round50",
+                "ablation/cifar100_round50",
+                "ablation/tinyimagenet_round50",
+                "ablation/fourdataset_round50"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "Round 60",
+              "sources": [
+                "ablation/cifar10_round60",
+                "ablation/cifar100_round60",
+                "ablation/tinyimagenet_round60",
+                "ablation/fourdataset_round60"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            }
+          ],
+          "bands": false,
+          "ylim": null,
+          "legend": {
+            "loc": "center right",
+            "bbox_to_anchor": [
+              0.99,
+              0.3
+            ],
+            "ncol": 2
+          }
+        },
+        {
+          "title": "Impact of Local Epochs on Attack Success Rate",
+          "sources": [
+            "epochs/cifar10_E1",
+            "epochs/cifar100_E1",
+            "epochs/tinyimagenet_E1",
+            "epochs/fourdataset_E1",
+            "main/cifar10_vit_b32",
+            "main/cifar100_vit_b32",
+            "main/tinyimagenet_vit_b32",
+            "main/fourdataset_vit_b32",
+            "epochs/cifar10_E10",
+            "epochs/cifar100_E10",
+            "epochs/tinyimagenet_E10",
+            "epochs/fourdataset_E10",
+            "epochs/cifar10_E20",
+            "epochs/cifar100_E20",
+            "epochs/tinyimagenet_E20",
+            "epochs/fourdataset_E20"
+          ],
+          "curves": [
+            {
+              "label": "E=1",
+              "sources": [
+                "epochs/cifar10_E1",
+                "epochs/cifar100_E1",
+                "epochs/tinyimagenet_E1",
+                "epochs/fourdataset_E1"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "E=5",
+              "sources": [
+                "main/cifar10_vit_b32",
+                "main/cifar100_vit_b32",
+                "main/tinyimagenet_vit_b32",
+                "main/fourdataset_vit_b32"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "E=10",
+              "sources": [
+                "epochs/cifar10_E10",
+                "epochs/cifar100_E10",
+                "epochs/tinyimagenet_E10",
+                "epochs/fourdataset_E10"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            },
+            {
+              "label": "E=20",
+              "sources": [
+                "epochs/cifar10_E20",
+                "epochs/cifar100_E20",
+                "epochs/tinyimagenet_E20",
+                "epochs/fourdataset_E20"
+              ],
+              "metric": "asr",
+              "method": "promptmia"
+            }
+          ],
+          "bands": false,
+          "ylim": null
+        }
+      ],
+      "ncols": 3,
+      "bands": false
+    }
+  ]
+}

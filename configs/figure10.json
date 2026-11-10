@@ -1,0 +1,308 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_deit_b16",
+      "dataset": "cifar10",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_deit_b16",
+      "dataset": "cifar100",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_deit_b16",
+      "dataset": "tinyimagenet",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_deit_b16",
+      "dataset": "fourdataset",
+      "backbone": "deit_b16",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.05,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "bound/cifar100_alpha0.05",
+      "dataset": "cifar100",
+      "backbone": "deit_b16",
+      "mia_target": null
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.1,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "bound/cifar100_alpha0.1",
+      "dataset": "cifar100",
+      "backbone": "deit_b16",
+      "mia_target": null
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "bound/standard_cifar10",
+      "kind": "bound",
+      "run": "base/cifar10_deit_b16",
+      "n_targets": 100,
+      "seed": 42,
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "label": "CIFAR-10"
+    },
+    {
+      "name": "bound/standard_cifar100",
+      "kind": "bound",
+      "run": "base/cifar100_deit_b16",
+      "n_targets": 100,
+      "seed": 42,
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "label": "CIFAR-100"
+    },
+    {
+      "name": "bound/standard_tinyimagenet",
+      "kind": "bound",
+      "run": "base/tinyimagenet_deit_b16",
+      "n_targets": 100,
+      "seed": 42,
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "label": "TinyImageNet"
+    },
+    {
+      "name": "bound/standard_fourdataset",
+      "kind": "bound",
+      "run": "base/fourdataset_deit_b16",
+      "n_targets": 100,
+      "seed": 42,
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "label": "FourDataset"
+    },
+    {
+      "name": "bound/alpha0.05",
+      "kind": "bound",
+      "run": "bound/cifar100_alpha0.05",
+      "n_targets": 100,
+      "seed": 42,
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "label": "0.05"
+    },
+    {
+      "name": "bound/alpha0.1",
+      "kind": "bound",
+      "run": "bound/cifar100_alpha0.1",
+      "n_targets": 100,
+      "seed": 42,
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "label": "0.1"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure10",
+      "title": "Per-sample false-positive-rate bound",
+      "sources": [
+        "bound/standard_cifar10",
+        "bound/standard_cifar100",
+        "bound/standard_tinyimagenet",
+        "bound/standard_fourdataset",
+        "bound/alpha0.05",
+        "bound/alpha0.1"
+      ],
+      "panels": [
+        {
+          "title": "Theorem 3.3 FPR Upper Bound per Dataset (DeiT-B/16)",
+          "sources": [
+            "bound/standard_cifar10",
+            "bound/standard_cifar100",
+            "bound/standard_tinyimagenet",
+            "bound/standard_fourdataset"
+          ],
+          "labels": [
+            "CIFAR-10",
+            "CIFAR-100",
+            "TinyImageNet",
+            "FourDataset"
+          ],
+          "colors": [
+            "#4c72b0",
+            "#dd8452",
+            "#55a868",
+            "#c44e52"
+          ]
+        },
+        {
+          "title": "CIFAR-100 Per-sample FPR Upper Bound (Theorem 3.3, DeiT-B/16)",
+          "sources": [
+            "bound/alpha0.05",
+            "bound/alpha0.1",
+            "bound/standard_cifar100"
+          ],
+          "labels": [
+            "0.05",
+            "0.1",
+            "0.5"
+          ],
+          "xlabel": "Dirichlet alpha",
+          "colors": [
+            "#dd8452",
+            "#55a868",
+            "#4c72b0"
+          ]
+        }
+      ]
+    }
+  ]
+}

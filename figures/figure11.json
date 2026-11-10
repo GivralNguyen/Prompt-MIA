@@ -1,0 +1,43 @@
+{
+  "id": "figure11",
+  "sources": [
+    "extreme_embedding/cifar100_M10",
+    "extreme_embedding/cifar100_M20",
+    "extreme_embedding/cifar100_M30",
+    "extreme_embedding/cifar100_M40"
+  ],
+  "panels": [
+    {
+      "title": "CIFAR-100, extreme non-IID, M = 10",
+      "sources": [
+        "extreme_embedding/cifar100_M10"
+      ],
+      "mode": "gaussian",
+      "n_clusters": 4
+    },
+    {
+      "title": "CIFAR-100, extreme non-IID, M = 20",
+      "sources": [
+        "extreme_embedding/cifar100_M20"
+      ],
+      "mode": "gaussian",
+      "n_clusters": 5
+    },
+    {
+      "title": "CIFAR-100, extreme non-IID, M = 30",
+      "sources": [
+        "extreme_embedding/cifar100_M30"
+      ],
+      "mode": "gaussian",
+      "n_clusters": 8
+    },
+    {
+      "title": "CIFAR-100, extreme non-IID, M = 40",
+      "sources": [
+        "extreme_embedding/cifar100_M40"
+      ],
+      "mode": "gaussian",
+      "n_clusters": 11
+    }
+  ]
+}

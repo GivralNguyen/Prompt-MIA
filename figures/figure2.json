@@ -1,0 +1,31 @@
+{
+  "id": "figure2",
+  "sources": [
+    "keys/benign",
+    "keys/naive",
+    "keys/promptmia"
+  ],
+  "panels": [
+    {
+      "title": "t-SNE of Global Keys (Unmodified)",
+      "sources": [
+        "keys/benign"
+      ],
+      "mode": "keys"
+    },
+    {
+      "title": "t-SNE of Global Keys (with Naive Injected Keys Highlighted)",
+      "sources": [
+        "keys/naive"
+      ],
+      "mode": "keys"
+    },
+    {
+      "title": "t-SNE of Global Keys (with PromptMIA Injected Keys Highlighted)",
+      "sources": [
+        "keys/promptmia"
+      ],
+      "mode": "keys"
+    }
+  ]
+}

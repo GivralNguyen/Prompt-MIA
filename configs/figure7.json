@@ -1,0 +1,1237 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar100_vit_b32",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/tinyimagenet_vit_b32",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/fourdataset_vit_b32",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/cifar10_eps3_seed0",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 3
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/cifar10_eps5_seed0",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 5
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/cifar10_eps8_seed0",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 8
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/cifar100_eps3_seed0",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 3
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/cifar100_eps5_seed0",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 5
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/cifar100_eps8_seed0",
+      "dataset": "cifar100",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 8
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/tinyimagenet_eps3_seed0",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 3
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/tinyimagenet_eps5_seed0",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 5
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/tinyimagenet_eps8_seed0",
+      "dataset": "tinyimagenet",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 8
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/fourdataset_eps3_seed0",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 3
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/fourdataset_eps5_seed0",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 5
+    },
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "noise",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "noise/fourdataset_eps8_seed0",
+      "dataset": "fourdataset",
+      "backbone": "vit_b32",
+      "mia_target": null,
+      "dp_eps": 8
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "noise/cifar10_eps3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/cifar10_eps3_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 3
+    },
+    {
+      "name": "noise/cifar10_eps5",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/cifar10_eps5_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 5
+    },
+    {
+      "name": "noise/cifar10_eps8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/cifar10_eps8_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 8
+    },
+    {
+      "name": "defense/cifar10_none",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar10_vit_b32",
+      "defended": true,
+      "defense": "none",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "sparse_ratio": 0.8,
+      "mixup_alpha": 0.2
+    },
+    {
+      "name": "noise/cifar100_eps3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/cifar100_eps3_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 3
+    },
+    {
+      "name": "noise/cifar100_eps5",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/cifar100_eps5_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 5
+    },
+    {
+      "name": "noise/cifar100_eps8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/cifar100_eps8_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 8
+    },
+    {
+      "name": "defense/cifar100_none",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/cifar100_vit_b32",
+      "defended": true,
+      "defense": "none",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "sparse_ratio": 0.8,
+      "mixup_alpha": 0.2
+    },
+    {
+      "name": "noise/tinyimagenet_eps3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/tinyimagenet_eps3_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 3
+    },
+    {
+      "name": "noise/tinyimagenet_eps5",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/tinyimagenet_eps5_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 5
+    },
+    {
+      "name": "noise/tinyimagenet_eps8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/tinyimagenet_eps8_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 8
+    },
+    {
+      "name": "defense/tinyimagenet_none",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/tinyimagenet_vit_b32",
+      "defended": true,
+      "defense": "none",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "sparse_ratio": 0.8,
+      "mixup_alpha": 0.2
+    },
+    {
+      "name": "noise/fourdataset_eps3",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/fourdataset_eps3_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 3
+    },
+    {
+      "name": "noise/fourdataset_eps5",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/fourdataset_eps5_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 5
+    },
+    {
+      "name": "noise/fourdataset_eps8",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "noise/fourdataset_eps8_seed0",
+      "defended": true,
+      "defense": "noise",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "eot": 32,
+      "eot_coverage": 0.95,
+      "eot_grid": 41,
+      "dp_eps": 8
+    },
+    {
+      "name": "defense/fourdataset_none",
+      "kind": "attack",
+      "batch_sizes": [
+        1,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "repeats": 3,
+      "methods": [
+        "promptmia"
+      ],
+      "delta_min": 0.02,
+      "delta": 0.05,
+      "seed": 0,
+      "chunk": 250,
+      "run": "base/fourdataset_vit_b32",
+      "defended": true,
+      "defense": "none",
+      "n_targets": 1000,
+      "images_per_chunk": 512,
+      "sparse_ratio": 0.8,
+      "mixup_alpha": 0.2
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure7",
+      "title": "Adaptive PromptMIA under input noise (ViT-B/32), the noise in training and in the attack round",
+      "sources": [
+        "noise/cifar10_eps3",
+        "noise/cifar10_eps5",
+        "noise/cifar10_eps8",
+        "defense/cifar10_none",
+        "noise/cifar100_eps3",
+        "noise/cifar100_eps5",
+        "noise/cifar100_eps8",
+        "defense/cifar100_none",
+        "noise/tinyimagenet_eps3",
+        "noise/tinyimagenet_eps5",
+        "noise/tinyimagenet_eps8",
+        "defense/tinyimagenet_none",
+        "noise/fourdataset_eps3",
+        "noise/fourdataset_eps5",
+        "noise/fourdataset_eps8",
+        "defense/fourdataset_none"
+      ],
+      "panels": [
+        {
+          "title": "(a) CIFAR10",
+          "sources": [
+            "noise/cifar10_eps3",
+            "noise/cifar10_eps5",
+            "noise/cifar10_eps8",
+            "defense/cifar10_none"
+          ],
+          "curves": [
+            {
+              "label": "$\\epsilon$ = 3",
+              "sources": [
+                "noise/cifar10_eps3"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#d62728"
+            },
+            {
+              "label": "$\\epsilon$ = 5",
+              "sources": [
+                "noise/cifar10_eps5"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#ff7f0e"
+            },
+            {
+              "label": "$\\epsilon$ = 8",
+              "sources": [
+                "noise/cifar10_eps8"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#2ca02c"
+            },
+            {
+              "label": "No Defense",
+              "sources": [
+                "defense/cifar10_none"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#1f77b4"
+            }
+          ],
+          "ylim": [
+            50,
+            100.5
+          ],
+          "categorical_x": true
+        },
+        {
+          "title": "(b) CIFAR100",
+          "sources": [
+            "noise/cifar100_eps3",
+            "noise/cifar100_eps5",
+            "noise/cifar100_eps8",
+            "defense/cifar100_none"
+          ],
+          "curves": [
+            {
+              "label": "$\\epsilon$ = 3",
+              "sources": [
+                "noise/cifar100_eps3"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#d62728"
+            },
+            {
+              "label": "$\\epsilon$ = 5",
+              "sources": [
+                "noise/cifar100_eps5"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#ff7f0e"
+            },
+            {
+              "label": "$\\epsilon$ = 8",
+              "sources": [
+                "noise/cifar100_eps8"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#2ca02c"
+            },
+            {
+              "label": "No Defense",
+              "sources": [
+                "defense/cifar100_none"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#1f77b4"
+            }
+          ],
+          "ylim": [
+            50,
+            100.5
+          ],
+          "categorical_x": true
+        },
+        {
+          "title": "(c) TinyImageNet",
+          "sources": [
+            "noise/tinyimagenet_eps3",
+            "noise/tinyimagenet_eps5",
+            "noise/tinyimagenet_eps8",
+            "defense/tinyimagenet_none"
+          ],
+          "curves": [
+            {
+              "label": "$\\epsilon$ = 3",
+              "sources": [
+                "noise/tinyimagenet_eps3"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#d62728"
+            },
+            {
+              "label": "$\\epsilon$ = 5",
+              "sources": [
+                "noise/tinyimagenet_eps5"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#ff7f0e"
+            },
+            {
+              "label": "$\\epsilon$ = 8",
+              "sources": [
+                "noise/tinyimagenet_eps8"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#2ca02c"
+            },
+            {
+              "label": "No Defense",
+              "sources": [
+                "defense/tinyimagenet_none"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#1f77b4"
+            }
+          ],
+          "ylim": [
+            50,
+            100.5
+          ],
+          "categorical_x": true
+        },
+        {
+          "title": "(d) FourDataset",
+          "sources": [
+            "noise/fourdataset_eps3",
+            "noise/fourdataset_eps5",
+            "noise/fourdataset_eps8",
+            "defense/fourdataset_none"
+          ],
+          "curves": [
+            {
+              "label": "$\\epsilon$ = 3",
+              "sources": [
+                "noise/fourdataset_eps3"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#d62728"
+            },
+            {
+              "label": "$\\epsilon$ = 5",
+              "sources": [
+                "noise/fourdataset_eps5"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#ff7f0e"
+            },
+            {
+              "label": "$\\epsilon$ = 8",
+              "sources": [
+                "noise/fourdataset_eps8"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#2ca02c"
+            },
+            {
+              "label": "No Defense",
+              "sources": [
+                "defense/fourdataset_none"
+              ],
+              "metric": "asr",
+              "method": "promptmia",
+              "color": "#1f77b4"
+            }
+          ],
+          "ylim": [
+            50,
+            100.5
+          ],
+          "categorical_x": true
+        }
+      ],
+      "ncols": 4
+    }
+  ]
+}

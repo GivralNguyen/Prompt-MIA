@@ -1,0 +1,103 @@
+{
+  "training": [
+    {
+      "seed": 0,
+      "rounds": 60,
+      "clients": 80,
+      "clients_per_round": 10,
+      "local_epochs": 5,
+      "batch_size": 64,
+      "lr": 0.0001,
+      "key_lr": 0.001,
+      "lam": 0.5,
+      "M": 20,
+      "N": 4,
+      "alpha": 0.5,
+      "split": "dirichlet",
+      "aggregator": "fedavg",
+      "head": "cls",
+      "defense": "none",
+      "prompt_dropout": 0.0,
+      "save_rounds": [
+        0,
+        1,
+        20,
+        60
+      ],
+      "cache_device": "cpu",
+      "eval_batch_size": 500,
+      "name": "base/cifar10_vit_b32",
+      "dataset": "cifar10",
+      "backbone": "vit_b32",
+      "mia_target": 0
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "embedding/cifar10_round0",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "round": 0,
+      "n_queries": 200,
+      "query_sampling": "first"
+    },
+    {
+      "name": "embedding/cifar10_round1",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "round": 1,
+      "n_queries": 200,
+      "query_sampling": "first"
+    },
+    {
+      "name": "embedding/cifar10_round20",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "round": 20,
+      "n_queries": 200,
+      "query_sampling": "first"
+    },
+    {
+      "name": "embedding/cifar10_round60",
+      "kind": "embedding",
+      "run": "base/cifar10_vit_b32",
+      "round": 60,
+      "n_queries": 200,
+      "query_sampling": "first"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "figure18",
+      "title": "Benign keys and query vectors across training rounds",
+      "sources": [
+        "embedding/cifar10_round0",
+        "embedding/cifar10_round1",
+        "embedding/cifar10_round20",
+        "embedding/cifar10_round60"
+      ],
+      "panels": [
+        {
+          "sources": [
+            "embedding/cifar10_round0"
+          ]
+        },
+        {
+          "sources": [
+            "embedding/cifar10_round1"
+          ]
+        },
+        {
+          "sources": [
+            "embedding/cifar10_round20"
+          ]
+        },
+        {
+          "sources": [
+            "embedding/cifar10_round60"
+          ]
+        }
+      ]
+    }
+  ]
+}
